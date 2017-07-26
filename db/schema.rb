@@ -51,7 +51,8 @@ ActiveRecord::Schema.define(version: 20170726055914) do
 
   create_table "quest_incentives", force: :cascade do |t|
     t.integer  "quest_id"
-    t.integer  "type"
+    t.string   "item_type"
+    t.integer  "item_id"
     t.integer  "num"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

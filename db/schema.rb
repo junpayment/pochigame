@@ -13,14 +13,18 @@
 ActiveRecord::Schema.define(version: 20170726055914) do
 
   create_table "characters", force: :cascade do |t|
+    t.integer  "rarity"
     t.integer  "level_max"
     t.string   "name"
     t.integer  "growth_type"
-    t.integer  "atack"
+    t.integer  "attack"
     t.integer  "defense"
     t.integer  "hp"
+    t.integer  "price"
+    t.integer  "exp"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["rarity"], name: "index_characters_on_rarity"
   end
 
   create_table "enemies", force: :cascade do |t|

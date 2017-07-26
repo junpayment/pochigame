@@ -1,0 +1,12 @@
+-
+  id: 1
+  content_type: "ContentCharacter"
+  content_id: 1
+  quest_id: 1
+  num: 1
+-
+  id: 2
+  content_type: "ContentMoney"
+  content_id: 1
+  quest_id: 1
+  num: 1

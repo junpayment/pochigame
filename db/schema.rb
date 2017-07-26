@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726055914) do
+ActiveRecord::Schema.define(version: 20170726111847) do
 
   create_table "characters", force: :cascade do |t|
     t.integer  "rarity"
@@ -27,11 +27,34 @@ ActiveRecord::Schema.define(version: 20170726055914) do
     t.index ["rarity"], name: "index_characters_on_rarity"
   end
 
+  create_table "content_moneys", force: :cascade do |t|
+    t.integer  "num"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "enemies", force: :cascade do |t|
     t.integer  "level"
     t.integer  "character_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "gacha_sheets", force: :cascade do |t|
+    t.integer  "gacha_id"
+    t.integer  "content_id"
+    t.string   "content_type"
+    t.integer  "rate"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["gacha_id"], name: "index_gacha_sheets_on_gacha_id"
+  end
+
+  create_table "gachas", force: :cascade do |t|
+    t.string   "name"
+    t.string   "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "growths", force: :cascade do |t|
@@ -55,11 +78,11 @@ ActiveRecord::Schema.define(version: 20170726055914) do
 
   create_table "quest_incentives", force: :cascade do |t|
     t.integer  "quest_id"
-    t.string   "item_type"
-    t.integer  "item_id"
+    t.string   "content_type"
+    t.integer  "content_id"
     t.integer  "num"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.index ["quest_id"], name: "index_quest_incentives_on_quest_id"
   end
 

@@ -1,0 +1,12 @@
+-
+  id: 1
+  gacha_id: 1
+  content_id: 1
+  content_type: ContentCharacter
+  rate: 1
+-
+  id: 2
+  gacha_id: 1
+  content_id: 1
+  content_type: ContentMoney
+  rate: 1

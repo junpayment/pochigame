@@ -1,0 +1,2 @@
+class QuestIncentive < ApplicationRecord
+end

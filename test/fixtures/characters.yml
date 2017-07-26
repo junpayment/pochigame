@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level_max: 1
+  name: MyString
+  growth_type: 1
+  atack: 1
+  defense: 1
+  hp: 1
+
+two:
+  level_max: 1
+  name: MyString
+  growth_type: 1
+  atack: 1
+  defense: 1
+  hp: 1

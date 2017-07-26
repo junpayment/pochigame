@@ -1,0 +1,2 @@
+class QuestArea < ApplicationRecord
+end

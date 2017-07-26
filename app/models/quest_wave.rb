@@ -1,0 +1,2 @@
+class QuestWave < ApplicationRecord
+end

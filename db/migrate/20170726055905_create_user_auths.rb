@@ -4,6 +4,7 @@ class CreateUserAuths < ActiveRecord::Migration[5.0]
       t.integer :user_id
       t.string :auth_key
 
+      t.index [:user_id]
       t.timestamps
     end
   end

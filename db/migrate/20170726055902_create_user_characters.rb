@@ -6,6 +6,7 @@ class CreateUserCharacters < ActiveRecord::Migration[5.0]
       t.integer :level
       t.integer :exp
 
+      t.index [:user_id, :character_id]
       t.timestamps
     end
   end

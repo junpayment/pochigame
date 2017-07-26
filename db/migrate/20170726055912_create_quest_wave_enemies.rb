@@ -4,6 +4,7 @@ class CreateQuestWaveEnemies < ActiveRecord::Migration[5.0]
       t.integer :quest_wave_id
       t.integer :enemy_id
 
+      t.index [:quest_wave_id]
       t.timestamps
     end
   end

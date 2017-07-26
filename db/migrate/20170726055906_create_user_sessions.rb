@@ -5,6 +5,7 @@ class CreateUserSessions < ActiveRecord::Migration[5.0]
       t.string :session_key
       t.datetime :login_at
 
+      t.index [:user_id]
       t.timestamps
     end
   end

@@ -50,3 +50,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'squasher'
 
 gem 'rails-erd'
+
+gem 'json-schema'
+gem 'prmd'

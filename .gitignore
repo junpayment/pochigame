@@ -25,3 +25,5 @@
 vendor/bundle
 
 squasher
+
+Gemfile.lock

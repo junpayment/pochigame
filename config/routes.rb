@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  namespace :api do
+    get 'users/index'
+  end
+
+  namespace :api do
+    get 'users/show'
+  end
+
+  namespace :api do
+    get 'users/session'
+  end
+
+  namespace :api do
+    get 'users/recover'
+  end
+
   # api
   namespace :api do
     # クエスト
